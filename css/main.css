@@ -1,0 +1,35 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.header {
+  animation: rotation 1s alternate;
+}
+
+@keyframes rotation {
+  from { transform: rotate(-50deg); }
+  to { transform: rotate (50deg); }
+}
+
+.sun {
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  from { transform: shake (-50deg); }
+  to { transform: shake (50deg); }
+}
