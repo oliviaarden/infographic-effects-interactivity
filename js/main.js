@@ -9,7 +9,7 @@ $earth.on('mouseout', function () {
   $earth.removeClass('earth-grow');
 });
 
-$grass.waypoint(function (direction) {
+$gras.waypoint(function (direction) {
   if (direction == 'down') {
     $grass.addClass('grass-fade');
   } else {
