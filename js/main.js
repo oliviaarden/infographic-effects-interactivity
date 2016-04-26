@@ -11,8 +11,8 @@ $earth.on('mouseout', function () {
 
 $grass.waypoint(function (direction) {
   if (direction == 'down') {
-  $grass.addClass('grass-fade');
+    $grass.addClass('grass-fade');
   } else {
-  $grass.removeClass('grass-fade');
-}
-}, { offset: '100%' });
+    $grass.removeClass('grass-fade');
+  }
+}, {offset: '100%'});

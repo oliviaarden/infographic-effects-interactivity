@@ -21,8 +21,10 @@ html {
 }
 
 @keyframes rotation {
-  from { transform: rotate(-50deg); }
-  to { transform: rotate (50deg); }
+
+  from { transform: rotate(-30deg); }
+
+  to { transform: rotate(0deg); }
 }
 
 .sun {
@@ -32,14 +34,17 @@ html {
 }
 
 @keyframes shake {
+
   0% { transform: rotate(0deg); }
+
   100% { transform: rotate(360deg); }
 }
 
 .earth {
   transition: all .5s linear;
   width: 100%;
-  transform: scale(1,1);
+  transform: scale(1, 1);
+  transform-origin: 701px 401px;
 }
 
 .earth-grow {
@@ -47,8 +52,10 @@ html {
 }
 
 @keyframes scale {
-  0% { transform: scale(1,1); }
-  100% { transform: scale(2,2); }
+
+  0% { transform: scale(1, 1); }
+
+  100% { transform: scale(2, 2); }
 }
 
 .grass {
@@ -61,6 +68,8 @@ html {
 }
 
 @keyframes fade {
+
   0% { opacity: 0; }
+
   100% { opacity: 1; }
 }
